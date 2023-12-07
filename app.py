@@ -2,7 +2,10 @@ import streamlit as st
 import pickle
 import requests
 import streamlit.components.v1 as components
-#from dashboard import dashboard_page
+import matplotlib.pyplot as plt
+import seaborn as sns
+from main import data 
+from dashboard import dashboard_page
 
 # Définir le thème avec un fond noir
 st.set_page_config(
