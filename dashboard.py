@@ -69,8 +69,11 @@ def dashboard_page():
     st.pyplot(f)
 
     # Afficher la paire de graphiques avec Seaborn
-    st.markdown("## Pair Plot:")
-    pair_plot = sns.pairplot(data)
+    subset_data = data.sample(frac=0.1)  # Adjust the fraction as needed
+    pair_plot = sns.pairplot(subset_data)
+
+    #st.markdown("## Pair Plot:")
+    #pair_plot = sns.pairplot(data)
     st.pyplot(pair_plot)
 
     # image_stream = BytesIO()
