@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import requests
 import streamlit.components.v1 as components
-from main import data 
 from dashboard import dashboard_page
 
 # Définir le thème avec un fond noir
